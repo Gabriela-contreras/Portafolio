@@ -1,0 +1,25 @@
+---
+import { SKILLS } from "./SkillsItems.astro";
+// section
+//li 
+//  img
+// span 
+---
+<section  class="mt-6 md:mt-10" >
+  <div >
+    <ul class="grid grid-cols-5 gap-4 mt-4 mb-4"  >
+      {SKILLS.map((skill) => (
+        <li class="flex flex-row items-center gap-2 mb-4  mx-2"  >
+          <img
+            src={skill.logo}
+            alt={skill.title}
+           class="w-10 h-10 rounded-full  bg-white"
+           //rounded-full w-8 h-8
+          />
+          <span class="text-lg font-semibold" >{skill.title}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
