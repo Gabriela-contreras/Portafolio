@@ -30,35 +30,34 @@ const PROJECTS = [
     link: "https://coingecko-react-tailwindcss-crypto.vercel.app/",
     github: "https://github.com/Gabriela-contreras/coingecko-react-tailwindcss-Crypto",
     image: "/projects/coin.jpg",
-    tags: [ TAGS.TAILWIND],
+    // tags: [ TAGS.TAILWIND],
   },
   {
-    title: "Ecomerce - Tienda hecha con React , JavaScript , Tailwind CSS",
-    description: "Es un proyecto de tienda en línea desarrollado con React, JavaScript y Tailwind CSS. Usa una Api de Platzi para los productos cargados ",
-    link: "https://tienda-react-henna.vercel.app/",
-    github: "https://github.com/Gabriela-contreras/TiendaConReact?tab=readme-ov-file",
-    image: "/projects/tiendaReact.png",
-    tags: [ TAGS.TAILWIND],
+    title: "Psicotecnicos ",
+    description: "Plataforma de Evaluaciones Psicotécnicas con IA Participé en el desarrollo de una solución web paraevaluaciones psicotécnicas, destinada a una empresa proveedora de servicios a clientes como Galicia y Tenaris. Me encargué de gran parte del desarrollo frontend, colaboré en el diseño de interfaces con Figma y realicé ajustes menores en backend.",
+    link: "https://psicotecnicos-front-jic5.vercel.app/home",
+    image: "/projects/psicotecnicos.png",
+    // tags: [ TAGS.TAILWIND],
   },
-    {
-    title: "Vida Marina -  Next , React , JavaScript , Tailwind CSS",
-    description:
-      "Este es un proyecto web dedicado a la vida marina, diseñado con un enfoque en la experiencia de usuario y el rendimiento.Desarrollado con tecnologías modernas como Next.js, React, TailwindCSS y HeroUI,",
-    link: "https://vida-marina-next-js.vercel.app/",
-    github: "https://github.com/Gabriela-contreras/VidaMarina_Next.js",
-    image: "/projects/vidaMarina.png",
-    tags: [ TAGS.TAILWIND],
-  },
+  //   {
+  //   title: "Vida Marina -  Next , React , JavaScript , Tailwind CSS",
+  //   description:
+  //     "Este es un proyecto web dedicado a la vida marina, diseñado con un enfoque en la experiencia de usuario y el rendimiento.Desarrollado con tecnologías modernas como Next.js, React, TailwindCSS y HeroUI,",
+  //   link: "https://vida-marina-next-js.vercel.app/",
+  //   github: "https://github.com/Gabriela-contreras/VidaMarina_Next.js",
+  //   image: "/projects/vidaMarina.png",
+  //   // tags: [ TAGS.TAILWIND],
+  // },
 ]
 ---
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="Imagen del proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
@@ -68,7 +67,7 @@ const PROJECTS = [
     </h3>
     <div class="flex flex-wrap mt-2">
       <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
+          {/* {tags.map((tag) => (
             <li>
               <span
                 class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
@@ -77,7 +76,7 @@ const PROJECTS = [
                 {tag.name}
               </span>
             </li>
-          ))}
+          ))} */}
         </ul>
 
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
